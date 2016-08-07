@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div id="header">
-		Ematoblender coil allocation
+		<h1>Ematoblender coil allocation</h1>
 	</div>
 	<div id="instructions">
 		Enter the coil index (starting from 1) for each anatomical point that you are tracking.
@@ -21,8 +21,21 @@
 		</div>
 	</div>
 	<div id="alloc">
-		TODO: Allocation information
-		<div id="alloc-entry">TODO: Form - fill in here what does where</div>
+		Type the coil number next to the anatomical landmark.
+		Leave the landmark blank if it is not tracked.
+		<div id="alloc-entry">
+			<form class="allocation-form" action="location_form_to_json.py" method="post">
+				<p>
+					<label for="tt-index">Tongue tip index</label>
+					<input id ="tt-index" type="text" value="0"></input>
+				</p>
+				<p>
+					<label for="ul-index">Upper lip index</label>
+					<input id ="ul-index" type="text" value="0"></input>
+				</p>	
+				<input type="Submit">
+			</form>
+		</div>
 		<div id="alloc-status">TODO: Current status: What is allocated and what is not.</div>
 	</div>
 </body>
