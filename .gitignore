@@ -17,7 +17,6 @@ blender_objects/
 test_sounds/
 testing/
 *.blend1
-*.html
 build
 mesh
 temp/*
