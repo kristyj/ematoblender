@@ -20,3 +20,8 @@ h1 {
 	float: left;
 	padding: 5px;
 }
+
+#alloc-status{
+	font-size: 200%;
+	display: inline;
+}
